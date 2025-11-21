@@ -22,21 +22,7 @@ The system follows a decoupled Event-Driven Architecture.
 
 ### Data Flow Diagram
 
-```mermaid
-graph LR
-    A[OrderProducer] -->|Sends Avro Record| B(Kafka Topic: orders)
-    B -->|Consumes Record| C[OrderConsumer]
-    C -->|Deserializes| D{Processing Logic}
-    D -->|Success| E[Update Running Average]
-    D -->|Fail| F{Retry < 3?}
-    F -- Yes --> D
-    F -- No --> G(Kafka Topic: orders-dlq)
-    
-    subgraph Infrastructure
-    H[Schema Registry] -.-> A
-    H -.-> C
-    end
-```
+![System Architecture Diagram](images/architecture.png)
 
 ### Component Breakdown
 
