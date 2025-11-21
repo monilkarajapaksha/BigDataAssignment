@@ -1,0 +1,1 @@
+A robust, real-time stream processing application built with Java, Apache Kafka, and Avro Serialization. This system simulates an e-commerce order stream, calculates real-time pricing analytics, and handles system failures gracefully using Retry patterns and a Dead Letter Queue (DLQ).
