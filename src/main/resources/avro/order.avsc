@@ -1,0 +1,10 @@
+{
+  "namespace": "com.assignment.kafka",
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {"name": "orderId", "type": "s tring", "doc": "Unique ID"},
+    {"name": "product", "type": "string", "doc": "Product Name"},
+    {"name": "price", "type": "float", "doc": "Price"}
+  ]
+}
