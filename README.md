@@ -22,7 +22,7 @@ The system follows a decoupled Event-Driven Architecture.
 
 ### Data Flow Diagram
 
-![System Architecture Diagram](images/architecture.png)
+![Flow Diagram](flowdiagram.png)
 
 ### Component Breakdown
 
