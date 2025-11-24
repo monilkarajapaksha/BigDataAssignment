@@ -11,8 +11,8 @@ This project demonstrates a "Big Data" microservices architecture. It consists o
   * **Stream Processing:** Real-time aggregation of order prices.
   * **Data Serialization:** Uses **Apache Avro** and Confluent Schema Registry for efficient, strongly-typed data exchange.
   * **Fault Tolerance:**
-      * [cite\_start]**Retry Logic:** Automatically retries processing upon temporary failures[cite: 6].
-      * [cite\_start]**Dead Letter Queue (DLQ):** Redirects permanently failed messages to a separate topic (`orders-dlq`) for later inspection.
+      * **Retry Logic:** Automatically retries processing upon temporary failures[cite: 6].
+      * **Dead Letter Queue (DLQ):** Redirects permanently failed messages to a separate topic (`orders-dlq`) for later inspection.
 
 -----
 
@@ -34,7 +34,7 @@ The system follows a decoupled Event-Driven Architecture.
 
 2.  **The Producer (`OrderProducer.java`):**
 
-      * [cite\_start]Generates random orders with fields: `orderId`, `product`, `price`.
+      * Generates random orders with fields: `orderId`, `product`, `price`.
       * Serializes data into binary Avro format.
       * Publishes to the `orders` topic.
 
